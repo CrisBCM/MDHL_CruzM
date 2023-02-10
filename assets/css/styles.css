@@ -5,13 +5,13 @@ body{
     margin: 0;
 }
 .header-container{
-    width: 80vw;
-    margin: 60px auto 10px auto;
+    margin: 60px 0 10px 0;
 }
 .header-container > h1{
     margin: 0;
 }
 .nav-container{
+    position: relative;
     background-image: url(../images/design2_image1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body{
     border: 1.5px solid black;
 }
 .button-container{
-    position: relative;
+    position: absolute;
     top: -10px;
     left: 78%;
 }
@@ -44,9 +44,8 @@ body{
     margin: 9px 0px;
 }
 .main-container{
-    width: 80vw;
     height: 400px;
-    margin: 30px auto 0 auto;
+    margin: 30px 0 0 0;
 }
 .logo-container{
     height: 400px;
