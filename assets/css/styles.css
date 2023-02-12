@@ -1,8 +1,10 @@
 *{
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
     margin: 0;
+    background-color: rgb(202, 202, 154);
 }
 .header-container{
     margin: 60px 0 10px 0;
@@ -17,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-    border: 1.5px solid black;
+    border: 1.5px solid rgb(165, 35, 35);
 }
 .button-container{
     position: absolute;
@@ -37,7 +39,8 @@ body{
     background-color: rgb(65, 146, 65);
 }
 .upcoming-div{
-    border: 1px solid black;
+    background-color: rgb(94, 139, 94);
+    border: 1px solid rgb(187, 189, 78);
     text-align: center;
 }
 .upcoming-div > h2{
@@ -48,14 +51,23 @@ body{
     margin: 30px 0 0 0;
 }
 .logo-container{
+    width: 200px;
     height: 400px;
     float: left;
     margin-right: 70px;
 }
 .logo{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 25px;
+    top: 18px;
+}
+.image-hockey{
+    display: inline-block;
     width: 200px;
     height: 200px;
-    
+    position: absolute;
 }
 .article{
     display: inline;
