@@ -4,79 +4,183 @@
 }
 body{
     margin: 0;
-    background-color: rgb(202, 202, 154);
+    background-color: rgb(204, 204, 182);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.header-container{
-    margin: 60px 0 10px 0;
+.tittle{
+    color: rgb(190, 186, 121);
+    text-shadow: 1.6px 1px 1px rgba(0, 0, 0, 0.486);
+    height: 60px;
+    padding-top: 13px;
+    padding-inline-start: 10px;
+    background-color: rgb(113, 143, 128);
 }
 .header-container > h1{
     margin: 0;
 }
 .nav-container{
     position: relative;
+    display: flex;
+    justify-content: flex-end;
     background-image: url(../images/design2_image1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-    border: 1.5px solid rgb(165, 35, 35);
 }
 .button-container{
     position: absolute;
     top: -10px;
-    left: 78%;
+    padding-right: 20px;
 }
 .nav-button{
-    background-color:rgb(63, 141, 214);
+    background-color:rgb(192, 90, 72);
     padding:5px 14px;
-    color: wheat;
+    color: rgb(231, 227, 219);
     text-decoration: none;
-    border: 1.5px solid black;
-    box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.459);
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.459);
     margin-left: 6px; 
 }
 .nav-button:hover{
-    background-color: rgb(65, 146, 65);
+    background-color: rgb(99, 131, 99);
 }
-.upcoming-div{
-    background-color: rgb(94, 139, 94);
-    border: 1px solid rgb(187, 189, 78);
-    text-align: center;
+.h2-upcoming{
+    background-color: rgb(114, 139, 114);
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+    padding-top: 10px;
+    color: rgb(190, 186, 121);
+    text-shadow: 1.6px 1px 1px rgba(0, 0, 0, 0.486);
 }
 .upcoming-div > h2{
     margin: 9px 0px;
 }
-.main-container{
-    height: 400px;
-    margin: 30px 0 0 0;
-}
 .logo-container{
     width: 200px;
-    height: 400px;
-    float: left;
-    margin-right: 70px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .logo{
+    width: 120px;
+    height: 120px;
     position: relative;
-    width: 150px;
-    height: 150px;
-    left: 25px;
-    top: 18px;
+    left: 42px;
+    top: 20px;
 }
-.image-hockey{
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    position: absolute;
+.section-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.article-container{
+    flex-basis: 50%;
 }
 .article{
-    display: inline;
-    width: 500px;
-    height: 100px;
-
+    margin-bottom: 38px;
 }
-.h3-article, .p-article{
+.image-hockey{
+    width: 200px;
+    height: 190px;
+    position: absolute;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.h3-article, .p-article, .span-margin{
     margin-top: 0;
-    padding-top: 25px;
+    margin-bottom: 8px;
+}
+
+/*Rules and policies*/
+
+.main-rules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.head-rules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.head-rules > h1{
+    width: 400px;
+    font-size: 1.5em;
+}
+.span-rules{
+    font-size: 1.2em;
+}
+.section-rules{
+    width: 40vw;
+}
+.h2-rules{
+    font-size: 1.2em;
+}
+.li-rules{
+    margin-bottom: 20px;
+}
+.list-style{
+    list-style-type:lower-alpha;
+}
+.ul-rules{
+    list-style-type: disc;
+}
+.mb{
+    margin-bottom: 50px;
+}
+
+/*game info*/
+
+.main-gameinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head-gaminginfo{
+    margin: 10px auto 10px auto;
+}
+.tittle-gameinfo{
+    text-align: center;
+    flex-basis: 100%;
+}
+.table-gameinfo{
+    width: 50vw;
+    margin-bottom: 20px;
+}
+.th-table, .td-table{
+    background-color: rgb(226, 229, 231);
+    padding: 20px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.span-addinfo{
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+.text-center{
+    text-align: center;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(181, 182, 180);
+    height: 10vh;
+    margin-top: auto;
+    justify-content: center;
+}
+.first-span{
+    margin-top: 20px;
+    flex-basis: 100%;
     
+}
+.span-gameinfo{
+    font-size: .8em;
+    margin-left: 25px;
 }

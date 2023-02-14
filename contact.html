@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Contact</title>
     <link rel="icon" href="/assets/images/Logo_Mighty_ducks-01.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <header class="header-container">
-        <h1>Mighty Ducks Hockey Legue</h1>
+        <h1 class="tittle">Mighty Ducks Hockey League</h1>
         <nav class="nav-container">
             <div class="button-container">
                 <a class="nav-button" href="./index.html">Home</a>
                 <a class="nav-button" href="./about.html">About MDHL</a>
                 <a class="nav-button" href="./contact.html">Contact</a>
+                <a class="nav-button" href="./rules.html">Rules & Policies</a>
+                <a class="nav-button" href="./game_info.html">Game Info</a>
             </div>
         </nav>
-        <div class="upcoming-div">
-            <h2>Upcoming Events</h2>
-        </div>
     </header>
-
-    <main class="main-container">
-        <div class="logo-container">
-            <img class="image-hockey" src="./assets/images/hockey_3.jpg" alt="">
-            <img class="logo" src="./assets/images/Logo_Mighty_ducks-01.png" alt="Logo_Mighty_ducks-01">
-        </div>
-            
-        <article class="article">
-           <p class="p-article">Please email us at mdhl@chihockey.org</p>
-           <p class="p-article">We reply to your email as soon as we can.</p>
-        </article>
+    <main class="main-container"> 
+        <section class="section-flex">
+            <h2 class="h2-upcoming text-center">Contact</h2>
+            <div class="logo-container">
+                <img class="image-hockey" src="./assets/images/hockey_3.jpg" alt="">
+                <img class="logo" src="./assets/images/Logo_Mighty_ducks-01.png" alt="Logo_Mighty_ducks-01">
+            </div>
+            <div class="article-container">
+                <article class="article">
+                    <span class="span-margin">Please email us at <a href="mailto:mdhl@chihokey.org">mdhl@chihokey.org</a></span>
+                    <br>
+                    <span class="span-margin">We reply to your email as soon as we can.</span>
+                </article>
+            </div>
+        </section>
     </main>
-    
+    <footer class="footer-container">
+        <span class="first-span span-gameinfo text-center">
+            <strong>Please direct all questions to:</strong>
+             Michael Randall, League Coordinator
+        </span>
+        <span class="span-gameinfo text-center"><strong>Phone:</strong>
+            <a href="tel:690-8132">(630)690-8132</a>
+        </span>
+        <span class="span-gameinfo text-center"><strong>Email:</strong>
+            <a href="#">michael.randall@chihockey.org</a>
+        </span>
+    </footer>
 </body>
 </html>
