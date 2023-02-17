@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="./assets/images/Logo_Mighty_ducks-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header class="header-container">
+        <h1 class="tittle">Mighty Ducks Hockey League</h1>
+        <nav class="nav-container">
+            <div class="button-container">
+                <a class="nav-button" href="./index.html">Home</a>
+                <a class="nav-button" href="./about.html">About MDHL</a>
+                <a class="nav-button" href="./contact.html">Contact</a>
+                <a class="nav-button" href="./rules.html">Rules & Policies</a>
+                <a class="nav-button" href="./game_info.html">Game Info</a>
+                <a class="nav-button" href="#"> Registration</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h2 class="h2-upcoming text-center">Registration Form</h2>
+        <form action="show_data.html" method="GET" class="form-registration">
+            <h3 class="h3-personal">Personal information</h3>
+            <div class="field-personal">
+                <label for="first-name" class="personal-label label-style">
+                    Player’s First Name
+                    <input class="input-personal" type="text" id="first-name" name="first-name">
+                </label>
+                <label for="last-name" class="personal-label label-style">
+                    Last Name
+                    <input class="input-personal" type="text" id="last-name" name="last-name">
+                </label>
+                <label for="street-address" class="personal-label label-style">
+                    Street Address
+                    <input class="input-personal" type="text" id="street-address" name="street-address">
+                </label>
+                <label for="city" class="personal-label label-style">
+                    City
+                    <input class="input-personal" type="text" id="city" name="city">
+                </label>
+                <label for="zip-code" class="personal-label label-style">
+                    Zip Code
+                    <input class="input-personal" type="text" id="zip-code" name="zip-code">
+                </label>
+                <label for="birth-date" class="personal-label label-style">
+                    Birth Date(mm/dd/yy)
+                    <input class="input-personal" type="date" id="birth-date" name="birth-date">
+                </label>
+                <label for="parent" class="personal-label label-style">
+                    Parent/Guardian
+                    <input class="input-personal" type="text" id="parent" name="parent">
+                </label>
+                <div class="personal-div">
+                    <p class="p-personal label-style">Gender:</p>
+                    <label for="female" class="personal-label gender-label font-style">
+                        Female
+                        <input type="radio" name="gender" id="female" value="female">
+                    </label>
+                    <label for="male" class="personal-label gender-label font-style">
+                        Male
+                        <input type="radio" name="gender" id="male" value="male">
+                    </label> 
+                </div>
+                <div class="personal-div grade-div">
+                    <p class="grade-span grade-p label-style">Grade:</p>
+                    <label for="pre-school" class="personal-label grade-label font-style">
+                        <input type="radio" name="grade" id="pre-school" value="pre-school">
+                        Pre-School
+                    </label>
+                    <label for="first" class=" personal-label grade-label font-style">
+                        <input class="input-grade" type="radio" name="grade" id="first" value="1st">
+                        1st
+                    </label>
+                    <label for="second" class="personal-label grade-label font-style">
+                        <input type="radio" name="grade" id="second" value="2nd">
+                        2nd
+                    </label> 
+                    <label for="third" class="personal-label grade-label font-style">
+                        <input type="radio" name="grade" id="third" value="3rd">
+                        3rd
+                    </label> 
+                    <label for="fourth" class="personal-label grade-label font-style">
+                        <input type="radio" name="grade" id="fourth" value="4th">
+                        4th
+                    </label> 
+                    <label for="fifth" class="personal-label grade-label font-style">
+                        <input type="radio" name="grade" id="fifth" value="5th">
+                        5th
+                    </label> 
+                </div>
+            </div> 
+            <div class="field-school">
+                <p class="label-style text-center">Which elementary school do you live near?</p>
+                <select class="select-school" name="school" id="school">
+                    <option selected disabled>Choose an option</option>
+                    <option value="1">AJ Katzenmaier</option>
+                    <option value="2">Greenbay</option>
+                    <option value="3">Howard A Yeager</option>
+                    <option value="4">Marjorie P Hart</option>
+                    <option value="5">North Elementary</option>
+                    <option value="6">South Elementary</option>
+                </select>
+            </div>
+            <div class="check-field">
+                <p class="p-field label-style">What position(s) do you normally play? (check all that apply)</p>
+                <label for="forward" class="label-position font-style">
+                    <input type="checkbox" name="forward" id="forward" value="forward">
+                    Forward
+                </label>
+                <label for="midfield" class="label-position font-style">
+                    <input type="checkbox" name="midfield" id="midfield" value="midfield">
+                    Midfield
+                </label>
+                <label for="defense" class="label-position font-style">
+                    <input type="checkbox" name="defense" id="defense" value="defense">
+                    Defense
+                </label>
+                <label for="goalkeeper" class="label-position font-style">
+                    <input type="checkbox" name="goalkeeper" id="goalkeeper" value="goalkeeper">
+                    Goalkeeper
+                </label>
+            </div>
+            <div class="check-field">
+               <p class="p-field label-style"> Uniform Size:</p>
+                <label for="youth-smal" class="label-position font-style">
+                    <input type="radio" name="size"  id="youth-smal" value="youth-smal">
+                    Youth Smal
+                </label>
+                <label for="youth-medium" class="label-position font-style">
+                    <input type="radio" name="size" id="youth-medium" value="youth-medium">
+                    Youth Medium
+                </label>
+                <label for="youth-large" class="label-position font-style">
+                    <input type="radio" name="size" id="youth-large" value="youth-large">
+                    Youth Large
+                </label>
+                <label for="small" class="label-position font-style">
+                    <input type="radio" name="size" id="small" value="small">
+                    Small
+                </label>
+                <label for="medium" class="label-position font-style">
+                    <input type="radio" name="size" id="medium" value="medium">
+                    Medium
+                </label>
+                <label for="large" class="label-position font-style">
+                    <input type="radio" name="size" id="large" value="large">
+                    Large
+                </label>
+                <label for="extra-large" class="label-position font-style">
+                    <input type="radio" name="size" id="extra-large" value="extra-large">
+                    Extra-Large
+                </label>
+            </div>
+            <div class="field-permission">
+                <p class="label-style">Permission to Play</p>
+                <p class="font-style">I, the parent or guardian of the minor registrant, agree that the registrant and i will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, i hereby releasem discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the program and/or being transported to or from MDHL sponsored activities, which transportation</p>
+                <p class="p-permission">By entering your name below, i hereby agree and authorize the above in addition, by signing below,i also acknowledge that i have read the cancellation policy and agree to its terms.</p>
+                <div class="signature-div">
+                    <label class=" label-style" for="signature">
+                        Parent/Guardian Signature:
+                        <input class="input-personal" type="text" name="signature" id="signature">
+                    </label>
+                    <label class="label-style" for="date">
+                        Date:
+                        <input class="input-personal" type="text" name="date" id="date">
+                    </label>
+                </div>
+            </div>
+            <button class="button-snd" type="submit">Send</button>
+        </form>
+    </main>
+    <footer class="footer-container">
+        <span class="first-span span-gameinfo text-center">
+            <span class="bold">Please direct all questions to:</span>
+             Michael Randall, League Coordinator
+        </span>
+        <span class="span-gameinfo text-center"><span class="bold">Phone:</span>
+            <a href="tel:690-8132">(630)690-8132</a>
+        </span>
+        <span class="span-gameinfo text-center"><span class="bold">Email:</span>
+            <a href="#">michael.randall@chihockey.org</a>
+        </span>
+    </footer>
+</body>
+</html>

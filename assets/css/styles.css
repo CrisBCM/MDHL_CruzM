@@ -4,7 +4,7 @@
 }
 body{
     margin: 0;
-    background-color: rgb(204, 204, 182);
+    background-color:rgba(169, 170, 167, 0.664);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,81 +15,113 @@ body{
     height: 60px;
     padding-top: 13px;
     padding-inline-start: 10px;
-    background-color: rgb(113, 143, 128);
-}
-.header-container > h1{
     margin: 0;
-}
-.nav-container{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
     background-image: url(../images/design2_image1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 500px;
+}
+a[href="#"] {
+    background-color: rgba(109, 126, 87, 0.938);
 }
 .button-container{
-    position: absolute;
-    top: -10px;
-    padding-right: 20px;
+    flex-basis: 100%;
+}
+.nav-container{
+    display: flex;
 }
 .nav-button{
-    background-color:rgb(192, 90, 72);
-    padding:5px 14px;
+    display: inline-block;
+    background-color:rgba(80, 78, 70, 0.712);
+    padding: 10px 20px;
     color: rgb(231, 227, 219);
     text-decoration: none;
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.459);
-    margin-left: 6px; 
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3px;
 }
 .nav-button:hover{
     background-color: rgb(99, 131, 99);
 }
 .h2-upcoming{
-    background-color: rgb(114, 139, 114);
+    background-color: rgba(114, 139, 114, 0.185);
     width: 100%;
-    height: 50px;
-    margin-top: 0;
-    padding-top: 10px;
-    color: rgb(190, 186, 121);
-    text-shadow: 1.6px 1px 1px rgba(0, 0, 0, 0.486);
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(165, 155, 139);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
 }
 .upcoming-div > h2{
     margin: 9px 0px;
 }
-.logo-container{
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(58, 63, 63, 0.836);
+    margin-bottom: 100px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
+}
+.max-container{
+    width: 100%;
+    text-align: center;
 }
 .logo{
-    width: 120px;
-    height: 120px;
-    position: relative;
-    left: 42px;
-    top: 20px;
+    width: 150px;
+    height: 150px;
+    min-width: 100px;
+    min-height: 100px;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 .section-flex{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;  
+}
+.hockey-1{
+    background: linear-gradient(rgba(5, 7, 12, 0.342), rgba(5, 7, 12, 0.274)), url(../images/hockey_1.jpg) no-repeat center fixed;
+    
+}
+.hockey-2{
+    background: linear-gradient(rgba(5, 7, 12, 0.342), rgba(5, 7, 12, 0.274)), url(../images/hockey_2.jpg) no-repeat center fixed;
+}
+.hockey-3{
+    background: linear-gradient(rgba(5, 7, 12, 0.342), rgba(5, 7, 12, 0.274)), url(../images/hockey_3.jpg) no-repeat center fixed;
 }
 .article-container{
-    flex-basis: 50%;
+    flex-basis: 80%;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 .article{
-    margin-bottom: 38px;
+    margin-bottom: 0;
 }
 .image-hockey{
     width: 200px;
     height: 190px;
     position: absolute;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    
 }
-.h3-article, .p-article, .span-margin{
+.h3-style{
+    color: rgb(143, 141, 138);
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.37);
+}
+.p-style{
+    color: rgb(221, 211, 198);
+    text-shadow: 1px 1px 10px black;
+}
+.h3-article, .p-article{
     margin-top: 0;
     margin-bottom: 8px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 /*Rules and policies*/
@@ -105,29 +137,59 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 40px;
+}
+.h2-style, .h3-color{
+    font-weight: 600;
+    color: rgb(103, 104, 103);
+    text-shadow: 1px 1px 1px white;
+}
+.h3-color{
+    color: rgb(55, 56, 55);
+}
+.head-rules, .section-rules{
+    background-color: rgba(184, 187, 180, 0.315);
+    box-shadow: 2px 2px 6px rgb(39, 38, 38);
+    width: 80%;
 }
 .head-rules > h1{
-    width: 400px;
     font-size: 1.5em;
 }
 .span-rules{
     font-size: 1.2em;
 }
-.section-rules{
-    width: 40vw;
-}
+
 .h2-rules{
     font-size: 1.2em;
+    text-align: center;
+}
+.p-rules{
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.2em;
+    
+}
+.label-style{
+    font-weight: 600;
+    color: rgb(94, 94, 94);
 }
 .li-rules{
     margin-bottom: 20px;
+    font-size: 1.1em;
+    padding-right: 30px;
 }
 .list-style{
     list-style-type:lower-alpha;
 }
+.pad-right{
+    padding-right: 20px;
+}
 .ul-rules{
     list-style-type: disc;
+}
+.font-style{
+    font-size: 1.1em;
+    color: #443d3d;
 }
 .mb{
     margin-bottom: 50px;
@@ -146,22 +208,25 @@ body{
 .tittle-gameinfo{
     text-align: center;
     flex-basis: 100%;
+    
 }
 .table-gameinfo{
-    width: 50vw;
     margin-bottom: 20px;
+    width: 80%;
 }
 .th-table, .td-table{
     background-color: rgb(226, 229, 231);
-    padding: 20px;
+    text-align: center;
+    font-size: .9em;
+    padding-top:5px;
+    padding-bottom:5px;
 }
-.flex-container{
-    display: flex;
-    flex-direction: column;
-}
-.span-addinfo{
-    margin-left: 70px;
+.div-addinfo{
+    width: 80%;
     margin-bottom: 20px;
+}
+.bold{
+    font-weight: bold;
 }
 .text-center{
     text-align: center;
@@ -170,7 +235,7 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color:rgb(181, 182, 180);
+    background-color: rgb(114, 122, 110);
     height: 10vh;
     margin-top: auto;
     justify-content: center;
@@ -183,4 +248,252 @@ body{
 .span-gameinfo{
     font-size: .8em;
     margin-left: 25px;
+}
+
+/* form */
+
+.form-registration{
+    background-color: rgba(175, 158, 157, 0.473);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 40px auto;
+    box-shadow: 2px 2px 6px rgb(82, 76, 76);
+    max-width: 840px;
+}
+.field-personal, .field-school{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.h3-personal{
+    color: rgb(65, 60, 60);
+}
+
+.personal-label{
+    margin-bottom: 20px;
+    width: 90%;
+}
+.personal-div{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.input-personal{
+    max-width: 800px;
+}
+.input-personal, .select-school{
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(155, 168, 95, 0.384);
+    margin-top: 7px;
+    font-size: 1em;
+    background-color: rgb(231, 230, 230);
+}
+.input-personal:focus, .select-school:focus{
+    outline: none;
+    background-color: rgb(212, 211, 210);
+}
+.gender-label{
+    background-color:rgb(231, 230, 230);
+    display: flex;
+    justify-content: center;
+}
+.grade-span{
+    margin-bottom: 10px;
+}
+.grade-div{
+    display: flex;
+    flex-direction: column;
+}
+.grade-label{
+    background-color:rgb(231, 230, 230);
+}
+.check-field{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 20px 0 20px 0;
+}
+.p-field{
+    padding: 5px;
+    text-align: center;
+    flex-basis: 100%;
+}
+.label-position{
+    padding-bottom: 30px;
+}
+.signature-div{
+    display: flex;
+    flex-direction: column;
+}
+.button-snd{
+    border: none;
+    min-width: 100px;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(219, 208, 194);
+    font-size: 1.1em;
+}
+.button-snd:hover{
+    background-color: rgb(214, 210, 204);
+    cursor: pointer;
+}
+
+/*Maps*/
+
+.section-map{
+    background-color: rgba(160, 155, 149, 0.473);
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    width: 80%;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+.article-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article-map > iframe{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.iframe-map{
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
+}
+@media screen and (min-width:767px) {
+    .section-flex{
+        justify-content: flex-start;
+    }
+    .logo{
+        margin-top: 77px;
+    }
+    .container{
+        justify-content:space-around;
+    }
+    .max-container{
+        width: max-content;
+    }
+    .about-logo--container{
+        width: 30%;
+        text-align: left
+    }
+    .logo-about{
+        margin-left: 70px;
+    }
+    .logo-contact{
+        margin-top: 30px;
+    }
+    .nav-button{
+        padding: 10px 20px;
+    }
+    .article-container{
+        padding-top: 77px;
+        flex-basis: 50%;
+    }
+    .head-rules{
+        width: 60%;
+    }
+    .th-table, .td-table{
+        padding: 20px;
+    }
+    .div-addinfo{
+        max-width: 1055px;
+    }
+}
+@media screen and (min-width:1023px){
+    .header-container{
+        background-image: url(../images/design2_image1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .tittle{
+        background: none;
+    }
+    .container{
+        max-width: 819px;
+    }
+    .nav-button{
+        width: max-content;
+        margin-top: 5px;
+    }
+    .button-container{
+        flex-basis: content;
+    }
+    .section-map{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .h2-section--map{
+        flex-basis: 100%;
+    }
+    .nav-container{
+        justify-content: center;
+    }
+    .head-rules{
+        max-width: 410px;
+        margin-bottom: 0;
+    }
+    .section-rules{
+        max-width: 570px;
+    }
+    .field-personal{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:20px;
+        justify-content: center;
+    }
+    .personal-label{
+        width: 48%;
+    }
+    .personal-div{
+        width: 48%;
+        display: flex;
+    }
+    .p-personal{
+        margin: 0;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .gender-label{
+        padding: 8px;
+        margin-bottom: 0;
+    }
+    .grade-div{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+    .grade-p{
+        width: 100%;
+        text-align: center;
+    }
+    .field-permission{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .table-gameinfo, .section-map{
+        max-width: 1070px;
+    }
+
 }
